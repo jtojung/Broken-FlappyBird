@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Profiling;
 
 namespace FlappyBird
 {
@@ -8,12 +9,14 @@ namespace FlappyBird
     {
         void OnTriggerEnter2D(Collider2D other)
         {
+        
             // Have we collided with the bird?
             if(other.name.Contains("Bird"))
             {
                 // Then the bird scored
                 GameManager.Instance.BirdScored();
-            }  
+            }
+           
         }
     }
 }

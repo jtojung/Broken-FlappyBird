@@ -24,6 +24,7 @@ namespace FlappyBird
             {
                 // Cancel velocity to stop scrolling
                 rigid.velocity = Vector2.zero;
+                print("Game Over!!");
             }
         }
     }
